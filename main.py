@@ -1,7 +1,8 @@
 # import des bibliothèques
 import pandas as pd
+from random import randint
 
-#parcing fichier source
+#parsing fichier source
 #2 colonnes, une identification de la personne, l'autre contenant les contenus
 
 
