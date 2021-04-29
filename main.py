@@ -4,10 +4,8 @@ from random import randint
 
 
 #création objet client
-class stuff:
-    def __init__(self, type_objet, proprietaire):
-        self.type_objet = type_objet
-        self.proprietaire = proprietaire
+stuff = [{"nom":"pierre", "objet": []},]
+
 
 
 #parsing fichier source
@@ -26,8 +24,6 @@ def add_stuff(self, username, cust_name):
     i = 0
 
     for i <= num_things:
-
-
 
 
 #export en excel
