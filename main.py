@@ -21,25 +21,20 @@ for index_produit in range(50):
 #création listings
 
 stuff = []
+names = []
 for prenoms in prenom:
     n = randint(1, 50)
-    produit_client = []
+
+    # ajout d'un nombre aléatoire de produit par personne
     for i in range(n):
         p = randint(0, 49)
-        produit_client.append(produits[p])
+        names.append(prenoms)
+        stuff.append(produits[p])
 
 
-    stuff.append({"nom":prenoms, "objets": [produit_client]})
+data = {"noms": names, "objets": stuff}
 
-
-
-#détermination aléatoire du nombre de contenu par personne
-
-
-#génération des contenus par personne
-
-
-
+data_frame = pd.DataFrame.from_dict(data)
 #export en excel
-
+data_frame.to_csv("sortie.csv", columns=("noms", "objets"), index=False)
 
