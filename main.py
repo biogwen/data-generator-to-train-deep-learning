@@ -18,24 +18,26 @@ for index_produit in range(50):
 
     produits.append(reference_produit)
 
-print (produits)
-
 #création listings
 
 stuff = []
 for prenoms in prenom:
-    stuff.append({"nom":prenoms, "objets": []})
+    n = randint(1, 50)
+    produit_client = []
+    for i in range(n):
+        p = randint(0, 49)
+        produit_client.append(produits[p])
+
+
+    stuff.append({"nom":prenoms, "objets": [produit_client]})
 
 
 
 #détermination aléatoire du nombre de contenu par personne
 
-#génération des contenus par personne
-def add_stuff(self, username, cust_name):
-    num_things = randint(1, 60)
-    i = 0
 
-   # for i <= num_things:
+#génération des contenus par personne
+
 
 
 #export en excel
